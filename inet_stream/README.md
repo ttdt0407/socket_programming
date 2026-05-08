@@ -1,7 +1,6 @@
 # IPC: Socket
 
-> Domain: Ipv4
-> Type: Stream (TCP)
+> IPv4, TCP
 
 
 - Step 1: Compile the source code to create the object
@@ -9,7 +8,7 @@
 ```bash
 make
 ```
-IP
+
 - Step 2: Find the IP of server
 
 ```bash
