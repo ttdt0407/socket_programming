@@ -18,7 +18,7 @@ void chat(int server_fd) {
         memset(recv, 0, BUFFER_SIZE);
         memset(send, 0, BUFFER_SIZE);
 
-        printf("Send to the server: \n");
+        printf("Send to the server: ");
         fgets(send, BUFFER_SIZE, stdin);
         num_write = write(server_fd, (char *)send, strlen(send));
         if (num_write <= 0) {
