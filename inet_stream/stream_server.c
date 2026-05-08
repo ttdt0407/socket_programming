@@ -31,7 +31,7 @@ void chat(int new_socket) {
         }
         printf("Received: %s", recv_buff);
 
-        printf("Response: ");
+        printf("Response to client: ");
         if (fgets(send_buff, BUFFER_SIZE, stdin) == NULL) {
             break;
         };
@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
     int opt = 1;
 
     if (argc < 2) {
-        printf("ERROR: no port provied !\ncommand: ./stream_server <port_num>\nn");
+        printf("ERROR: no port provied !\ncommand: ./stream_server <port_num>\n");
         exit(EXIT_FAILURE);
     }
     port_num = atoi(argv[1]);
