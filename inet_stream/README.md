@@ -2,6 +2,7 @@
 
 > IPv4, TCP
 
+**Basic communication between 2 end-points.**
 
 - Step 1: Compile the source code to create the object
 
