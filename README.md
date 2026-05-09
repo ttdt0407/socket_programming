@@ -1,6 +1,4 @@
-# IPC: Socket
-
-> IPv4, TCP
+# IPC: Socket examples
 
 **Basic communication between 2 end-points.**
 
@@ -21,11 +19,11 @@ ifconfig
 - Step 4: From server side, run the program and pass the port argument:
 
 ```bash
-./server 8080
+./stream_server 8080
 ```
 
 - Step 5: From the client side, run the program, pass the IP and port of the server:
 
 ```bash
-./client 192.168.100.182 8080
+./stream_client 192.168.100.182 8080
 ```

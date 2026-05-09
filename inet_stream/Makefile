@@ -1,12 +1,13 @@
-all: client server
+CC = gcc
+CFLAGS = -Wall -Wextra -g
 
-client: stream_client.c
-	gcc -o client stream_client.c
+all: stream_server stream_client
 
-server: stream_server.c
-	gcc -o server stream_server.c
+stream_server: stream_server.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+stream_client: stream_client.o
+	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	rm -rf client server *.o
-
-.PHONY: all client server clean
+	rm -rf stream_server stream_client *.o
